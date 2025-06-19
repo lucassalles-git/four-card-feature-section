@@ -64,7 +64,7 @@ header p {
   color: hsl(234, 12%, 34%);
 }
 .container section p {
-  font-size: clamp(0.8rem, 0.25rem + 1vw, 0.9rem);
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
 }
 .container section .team-builder {
   border-top: 5px solid hsl(0, 78%, 62%);
