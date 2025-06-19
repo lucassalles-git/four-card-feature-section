@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Fonts*/
+$poppins: "Poppins", sans-serif;
+/*weights*/
+$weight-200: 200;
+$weight-400: 400;
+$weight-600: 600;
+
+/*Colors*/
+/*Primary*/
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+/*Neutral*/
+$grey-500: hsl(234, 12%, 34%);
+$grey-400: hsl(212, 6%, 44%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  font-family: $poppins;
+  font-size: 15px; /*Tamanho base de fonte*/
+  color: $grey-400;
+}
+
+header {
+  min-width: 16rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0.7rem;
+
+    font-size: clamp(1.45rem, 3.8vw, 2.35rem);
+    font-weight: $weight-200;
+    max-inline-size: 21ch;
+
+    span {
+      color: $grey-500;
+      font-weight: $weight-600;
+    }
+  }
+
+  p {
+    font-size: clamp(0.9rem, 3.8vw, 1rem);
+    max-inline-size: clamp(34ch, 50vw, 54ch);
+    font-weight: $weight-400;
+    color: $grey-500;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  section:not(.meio) {
+    width: clamp(18rem, 30vw, 23rem);
+    padding: 1.7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 15px #d6def3;
+  }
+
+  .supervisor {
+    border-top: 5px solid $cyan;
+  }
+
+  section {
+    h2 {
+      color: $grey-500;
+    }
+
+    p {
+      font-size: clamp(0.8rem, 0.25rem + 1vw, 0.9rem);
+    }
+
+    .team-builder {
+      border-top: 5px solid $red;
+    }
+
+    .karma {
+      border-top: 5px solid $orange;
+    }
+
+    .image {
+      margin: 1.5rem 0;
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  .calculator {
+    border-top: 5px solid $blue;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+   @media (min-width: 1024px) {
+    flex-wrap: nowrap;
+   }
+}
+
+.meio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+   @media (min-width: 1024px){
+    flex-direction: column;
+   }
+}
+
+.attribution {
+  font-size: 0.6rem;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
