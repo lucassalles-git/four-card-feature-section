@@ -11,7 +11,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -31,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/lucassalles-git/four-card-feature-section?tab=readme-ov-file#useful-resources)
+- Live Site URL: [Live site](https://lucassalles-git.github.io/four-card-feature-section/)
 
 ## My process
 
